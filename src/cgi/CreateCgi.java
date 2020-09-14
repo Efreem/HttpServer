@@ -21,7 +21,7 @@ public class CreateCgi {
     }
 
     public CreateCgi addHttpHeader() {
-        readycgi += CreateCgi.httpheader;
+        readycgi += httpheader;
         return this;
     }
 
@@ -31,12 +31,12 @@ public class CreateCgi {
     }
 
     public CreateCgi addContentType() {
-        readycgi += CreateCgi.content_type;
+        readycgi += content_type;
         return this;
     }
 
     public CreateCgi addContentLength(Integer Content_Length) {
-        readycgi += CreateCgi.content_length + Content_Length.toString() + "\n\n";
+        readycgi += content_length + Content_Length.toString() + "\n\n";
         return this;
     }
 
